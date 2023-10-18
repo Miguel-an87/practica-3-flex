@@ -163,6 +163,7 @@ footer {
   align-items: center;
   color: #9ed0f4;
   margin-top: 60px;
+  flex-wrap: wrap;
 }
 li {
   list-style: none;
@@ -206,6 +207,10 @@ li:hover {
   .down-header {
     display: flex;
   }
+  .social {
+    margin-top: 0px;
+    height: 40%;
+  }
   .pregunta,
   .pregunta-1,
   .respuesta,
@@ -214,10 +219,13 @@ li:hover {
   }
   main,
   footer {
-    flex-wrap: wrap;
+    /*     flex-wrap: wrap; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  li {
+    font-size: small;
   }
 }
 @media screen and (max-width: 480px) {
@@ -228,7 +236,7 @@ li:hover {
   }
   main,
   footer {
-    flex-wrap: wrap;
+    /*     flex-wrap: wrap; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -239,5 +247,14 @@ li:hover {
   }
   .form- {
     width: 28%;
+  }
+  li {
+    font-size: small;
+  }
+  .pregunta,
+  .pregunta-1,
+  .respuesta,
+  .respuesta-1 {
+    font-size: x-small;
   }
 }
